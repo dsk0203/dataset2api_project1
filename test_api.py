@@ -10,21 +10,23 @@ def run_test():
     print(_test_get.json())
 
 
+    print('\n\n\n\n')
+
+
 
     # test post
     payload = {
                 'experience_level': 'EX',
                 'employment_type' : 'FT',
                 'company_size': 'L',
-                'role' : 'Artificial Intelligence Engineer',
+                'role' : 'Machine Learning Engineer',
                 'residence' : 'US',
-               # 'remote%' : '100'
+                'remote%' : '100'
     }
 
     r = requests.post('http://127.0.0.1:5000/pred', json=payload)
 
-    print(r.json())
-
+    print(r.json(), '\n\n\n')
 
 
 if __name__ == '__main__':
